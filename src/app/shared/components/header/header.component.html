@@ -1,0 +1,238 @@
+<!-- 
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"crossorigin="anonymous"></script>
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+	<div class="container-fluid">
+		 <a class="navbar-brand" href="#">Aman Tex</a>
+	 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main_nav"  aria-expanded="false" aria-label="Toggle navigation">
+		 <span class="navbar-toggler-icon"></span>
+	   </button>
+	 <div class="collapse navbar-collapse" id="main_nav" *ngIf="showHead">
+	   <ul class="navbar-nav">
+		   <li class="nav-item active"> <a class="nav-link"  [routerLink]="['/default']">Home </a> </li>
+		  
+		   <li class="nav-item dropdown">
+			   <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">  Catalog </a>
+			   <ul class="dropdown-menu fade-up">
+				 <li><a class="dropdown-item" href="#"> Submenu item 1</a></li>
+				 <li><a class="dropdown-item" href="#"> Submenu item 2 </a></li>
+				 <li><a class="dropdown-item" href="#"> Submenu item 3 </a></li>
+			   </ul>
+		   </li>
+		   <li class="nav-item dropdown">
+			<a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">  Sales </a>
+			<ul class="dropdown-menu fade-up">
+			  <li><a class="dropdown-item" href="#"> Submenu item 1</a></li>
+			  <li><a class="dropdown-item" href="#"> Submenu item 2 </a></li>
+			  <li><a class="dropdown-item" href="#"> Submenu item 3 </a></li>
+			</ul>
+		</li>
+		<li class="nav-item dropdown">
+			<a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">  Sourcing </a>
+			<ul class="dropdown-menu fade-up">
+			  <li><a class="dropdown-item" href="#"> Submenu item 1</a></li>
+			  <li><a class="dropdown-item" href="#"> Submenu item 2 </a></li>
+			  <li><a class="dropdown-item" href="#"> Submenu item 3 </a></li>
+			</ul>
+		</li>
+		<li class="nav-item dropdown">
+			<a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">  Production  </a>
+			<ul class="dropdown-menu fade-up">
+			  <li><a class="dropdown-item" href="#"> Submenu item 1</a></li>
+			  <li><a class="dropdown-item" href="#"> Submenu item 2 </a></li>
+			  <li><a class="dropdown-item" href="#"> Submenu item 3 </a></li>
+			</ul>
+		</li>
+		<li class="nav-item dropdown">
+			<a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">  Setting  </a>
+			<ul class="dropdown-menu fade-up">
+			  <li><a class="dropdown-item" [routerLink]="['/admin-users']">Create User</a></li>
+			  <li><a class="dropdown-item" href="#"> Submenu item 2 </a></li>
+			  <li><a class="dropdown-item" href="#"> Submenu item 3 </a></li>
+			</ul>
+		</li>
+	   </ul>
+	   <ul class="navbar-nav ms-auto">
+		   <li class="nav-item dropdown">
+			   <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" (click)="logout()">Logout </a>
+			   <ul class="dropdown-menu dropdown-menu-end fade-down">
+				 <li><a class="dropdown-item"  [routerLink]="['signup']"> Add New User</a></li>
+				 <li><a class="dropdown-item" href="#"> Submenu item 2 </a></li>
+			   </ul>
+		   </li>
+	   </ul>
+	 </div> 
+	</div> 
+   </nav>
+  
+ -->
+
+
+ <div class="APP">
+	<!--Mega Menu-->
+	<nav class="navbar navbar-expand-lg navbar-light bg-white py-1 shadow-sm">
+	   <a class="navbar-brand" href="#"><img src="../assets/Amantex-Ltd.png" alt="..." width="20"> Aman Tex</a>
+
+	   <div class="container-fluid"  *ngIf="showHead">
+	  
+	  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+		<span class="navbar-toggler-icon"></span>
+	  </button>
+	  <div id="navbarSupportedContent" class="collapse navbar-collapse">
+		<ul class="navbar-nav mx-auto">
+		  <!-- Megamenu-->
+		  <li class="nav-item dropdown megamenu"><a id="megamneu" href="#" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false" class="nav-link dropdown-toggle font-weight-bold text-uppercase dropdown-toggle">Mega Menu</a>
+			<div aria-labelledby="dropdownMenuButton1" class="dropdown-menu border-0 p-0 m-0">
+			  <div class="container">
+				<div class="row bg-white rounded-0 m-0 shadow-sm">
+				  <div class="col-lg-7 col-xl-8">
+					<div class="p-4">
+					  <div class="row">
+						<div class="col-lg-6 mb-4">
+						  <h6 class="font-weight-bold text-uppercase">MegaMenu heading</h6>
+						  <ul class="list-unstyled">
+							<li class="nav-item"><a href="" class="nav-link text-small pb-0">Unique Features</a></li>
+							<li class="nav-item"><a href="" class="nav-link text-small pb-0 ">Image Responsive</a></li>
+							<li class="nav-item"><a href="" class="nav-link text-small pb-0 ">Auto Carousel</a></li>
+							<li class="nav-item"><a href="" class="nav-link text-small pb-0 ">Newsletter Form</a></li>
+						  </ul>
+						</div>
+						<div class="col-lg-6 mb-4">
+						  <h6 class="font-weight-bold text-uppercase">MegaMenu heading</h6>
+						  <ul class="list-unstyled">
+							<li class="nav-item"><a href="" class="nav-link text-small pb-0 ">Unique Features</a></li>
+							<li class="nav-item"><a href="" class="nav-link text-small pb-0 ">Image Responsive</a></li>
+							<li class="nav-item"><a href="" class="nav-link text-small pb-0 ">Auto Carousel</a></li>
+							<li class="nav-item"><a href="" class="nav-link text-small pb-0 ">Newsletter Form</a></li>
+						  </ul>
+						</div>
+						<div class="col-lg-6 mb-4">
+						  <h6 class="font-weight-bold text-uppercase">MegaMenu heading</h6>
+						  <ul class="list-unstyled">
+							<li class="nav-item"><a href="" class="nav-link text-small pb-0 ">Unique Features</a></li>
+							<li class="nav-item"><a href="" class="nav-link text-small pb-0 ">Image Responsive</a></li>
+							<li class="nav-item"><a href="" class="nav-link text-small pb-0 ">Auto Carousel</a></li>
+							<li class="nav-item"><a href="" class="nav-link text-small pb-0 ">Newsletter Form</a></li>
+						  </ul>
+						</div>
+						<div class="col-lg-6 mb-4">
+						  <h6 class="font-weight-bold text-uppercase">MegaMenu heading</h6>
+						  <ul class="list-unstyled">
+							<li class="nav-item"><a href="" class="nav-link text-small pb-0 ">Unique Features</a></li>
+							<li class="nav-item"><a href="" class="nav-link text-small pb-0 ">Image Responsive</a></li>
+							<li class="nav-item"><a href="" class="nav-link text-small pb-0 ">Auto Carousel</a></li>
+							<li class="nav-item"><a href="" class="nav-link text-small pb-0 ">Newsletter Form</a></li>
+						  </ul>
+						</div>
+					  </div>
+					</div>
+				  </div>
+				  <!-- <div class="col-lg-5 col-xl-4 px-0 d-none d-lg-block" style="background: center center url(https://therichpost.com/wp-content/uploads/2021/11/mega.png)no-repeat; background-size: cover;"></div> -->
+				  <br></div>
+			  </div>
+			</div>
+		  </li>
+		  <li class="nav-item dropdown">
+			<a class="nav-link dropdown-toggle font-weight-bold text-uppercase" href="#" data-bs-toggle="dropdown">Production</a>
+			<ul class="dropdown-menu fade-up">
+				<li class="nav-item"><a href="" class="nav-link text-small pb-0 ">Submenu item 1</a></li>
+				<li class="nav-item"><a href="" class="nav-link text-small pb-0 ">Submenu item 2</a></li>
+				<li class="nav-item"><a href="" class="nav-link text-small pb-0 ">Submenu item 3</a></li>
+				<li class="nav-item"><a href="" class="nav-link text-small pb-0 ">Submenu item 4</a></li>
+				<li class="nav-item"><a href="" class="nav-link text-small pb-0 ">Submenu item 5</a></li>
+				<li class="nav-item"><a href="" class="nav-link text-small pb-0 ">Submenu item 6</a></li>
+			</ul>
+		</li>
+		  <li class="nav-item"><a href="" class="nav-link font-weight-bold text-uppercase">About</a></li>
+		  <li class="nav-item"><a href="" class="nav-link font-weight-bold text-uppercase">Services</a></li>
+		  <li class="nav-item"><a href="" class="nav-link font-weight-bold text-uppercase">Contact</a></li>
+		  <li class="nav-item dropdown megamenu"><a id="megamneu" href="#" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false" class="nav-link dropdown-toggle font-weight-bold text-uppercase dropdown-toggle">Setting</a>
+			<div aria-labelledby="dropdownMenuButton1" class="dropdown-menu border-0 p-0 m-0">
+			  <div class="container">
+				<div class="row bg-white rounded-0 m-0 shadow-sm">
+				  <div class="col-lg-7 col-xl-8">
+					<div class="p-4">
+					  <div class="row">
+						<div class="col-lg-6 mb-4">
+						  <h6 class="font-weight-bold text-uppercase">User</h6>
+						  <ul class="list-unstyled">
+							<li class="nav-item"><a href="" class="nav-link text-small pb-0"  [routerLink]="['/admin-users']">User</a></li>
+							<li class="nav-item"><a href="" class="nav-link text-small pb-0 "  [routerLink]="['/admin-company']">Company</a></li>
+							<li class="nav-item"><a href="" class="nav-link text-small pb-0 " [routerLink]="['/employees']">Employees</a></li>
+							<li class="nav-item"><a href="" class="nav-link text-small pb-0 ">Newsletter Form</a></li>
+						  </ul>
+						</div>
+						<div class="col-lg-6 mb-4">
+						  <h6 class="font-weight-bold text-uppercase">MegaMenu heading</h6>
+						  <ul class="list-unstyled">
+							<li class="nav-item"><a href="" class="nav-link text-small pb-0 ">Unique Features</a></li>
+							<li class="nav-item"><a href="" class="nav-link text-small pb-0 ">Image Responsive</a></li>
+							<li class="nav-item"><a href="" class="nav-link text-small pb-0 ">Auto Carousel</a></li>
+							<li class="nav-item"><a href="" class="nav-link text-small pb-0 ">Newsletter Form</a></li>
+						  </ul>
+						</div>
+						<div class="col-lg-6 mb-4">
+						  <h6 class="font-weight-bold text-uppercase">MegaMenu heading</h6>
+						  <ul class="list-unstyled">
+							<li class="nav-item"><a href="" class="nav-link text-small pb-0 ">Unique Features</a></li>
+							<li class="nav-item"><a href="" class="nav-link text-small pb-0 ">Image Responsive</a></li>
+							<li class="nav-item"><a href="" class="nav-link text-small pb-0 ">Auto Carousel</a></li>
+							<li class="nav-item"><a href="" class="nav-link text-small pb-0 ">Newsletter Form</a></li>
+						  </ul>
+						</div>
+						<div class="col-lg-6 mb-4">
+						  <h6 class="font-weight-bold text-uppercase">MegaMenu heading</h6>
+						  <ul class="list-unstyled">
+							<li class="nav-item"><a href="" class="nav-link text-small pb-0 ">Unique Features</a></li>
+							<li class="nav-item"><a href="" class="nav-link text-small pb-0 ">Image Responsive</a></li>
+							<li class="nav-item"><a href="" class="nav-link text-small pb-0 ">Auto Carousel</a></li>
+							<li class="nav-item"><a href="" class="nav-link text-small pb-0 ">Newsletter Form</a></li>
+						  </ul>
+						</div>
+					  </div>
+					</div>
+				  </div>
+				  <!-- <div class="col-lg-5 col-xl-4 px-0 d-none d-lg-block" style="background: center center url(https://therichpost.com/wp-content/uploads/2021/11/mega.png)no-repeat; background-size: cover;"></div> -->
+				  <br></div>
+			  </div>
+			</div>
+		  </li>
+		</ul>
+		<ul class="navbar-nav ms-auto">
+			<li class="nav-item dropdown">
+				<a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" (click)="logout()">Logout </a>
+				<ul class="dropdown-menu dropdown-menu-end fade-down">
+				  <li><a class="dropdown-item"  [routerLink]="['signup']"> Add New User</a></li>
+				  <li><a class="dropdown-item" href="#"> Submenu item 2 </a></li>
+				</ul>
+			</li>
+		</ul>
+		
+	  </div>
+	  </div>
+	</nav>
+	
+	
+	<!-- For demo purpose -->
+	<!-- <section class="py-5 text-white">
+	  <div class="container py-4">
+		<div class="row">
+		  <div class="col-lg-8 mx-auto text-center">
+			<h1 class="display-4">Angular 13 Bootstrap 5 megamenu</h1>
+			<p class="lead mb-0">A very simple way to create Angular 13 Bootstrap 5 megamneu. </p>
+			<p class="lead">Snippet by <a href="https://therichpost.com/" class='text-white'><u>Therichpost</u></a>. </p>
+		  </div>
+		</div>
+		<div class="row pt-5">
+		  <div class="col-lg-10 mx-auto">
+			<p class="lead">Use the default Bootstrap's dropdown menu to hold your megamneu.</p>
+			<p class="lead">Set the <code>.dropdown</code> position to <code>static</code> instead of <code>absolute</code>.</p>
+			<p class="lead">We use the class <code>.megamenu</code> to hold this <code>static</code> position.</p>
+		  </div>
+		</div>
+	  </div>
+	</section> -->
+	<!-- End -->
+	<!--Menu Menu-->
+  </div>

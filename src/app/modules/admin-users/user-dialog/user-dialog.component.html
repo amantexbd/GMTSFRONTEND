@@ -1,0 +1,96 @@
+<h1 class="mat-dialog-title">User Registration</h1>
+<div mat-dialog-content>
+    <form [formGroup]="userForm">
+      <mat-form-field appearance="outline" hidden="true">
+        <mat-label>userId</mat-label>
+        <input formControlName="userId" matInput placeholder="userId">
+      </mat-form-field>
+      <mat-form-field appearance="outline">
+        <mat-label>Full Name</mat-label>
+        <input formControlName="userFullName" matInput placeholder="Full Name">
+      </mat-form-field>
+      <mat-form-field appearance="outline">
+        <mat-label>User Name</mat-label>
+        <input formControlName="username" matInput placeholder="User Name">
+      </mat-form-field>
+      <mat-form-field appearance="outline">
+        <mat-label>Email</mat-label>
+        <input formControlName="email" matInput placeholder="Email">
+      </mat-form-field>
+      <mat-form-field appearance="outline" *ngIf="addpass">
+        <mat-label>Enter your password</mat-label>
+        <input formControlName="password" matInput [type]="hide ? 'password' : 'text'">
+        <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
+          <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+        </button>
+      </mat-form-field>
+      <mat-form-field appearance="outline" *ngIf="addpass">
+        <mat-label>Confirm password</mat-label>
+        <input formControlName="password2" matInput [type]="hide2 ? 'password' : 'text'">
+        <button mat-icon-button matSuffix (click)="hide2 = !hide2" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide2">
+          <mat-icon>{{hide2 ? 'visibility_off' : 'visibility'}}</mat-icon>
+        </button>
+      </mat-form-field>
+      <!-- <mat-form-field appearance="outline">
+        <mat-label>Company </mat-label>
+        <mat-select formControlName="companyId">
+          <mat-option value="AGL">AGL</mat-option>
+            <mat-option value="ATL">ATL</mat-option>
+            <mat-option value="AFL">AFL</mat-option>
+            <mat-option value="ACML">ACML</mat-option>
+          <mat-option *ngFor="let department of departmentsList$|async" [value]="department.departmentID">
+            {{ department.title }}
+          </mat-option>
+        </mat-select>
+      </mat-form-field> -->
+      <!-- <mat-form-field appearance="outline">
+        <mat-label>Role </mat-label>
+        <mat-select formControlName="aspNetRoleID">
+            <mat-option value="Admin">Super Admin</mat-option>
+            <mat-option value="User">Admin</mat-option>
+            <mat-option value="User">User</mat-option>
+          <mat-option *ngFor="let department of departmentsList$|async" [value]="department.departmentID">
+            {{ department.title }}
+          </mat-option>
+        </mat-select>
+      </mat-form-field> -->
+      <mat-form-field appearance="outline">
+        <mat-label>Phone Number</mat-label>
+        <input formControlName="phoneNumber" matInput placeholder=" Phone Number">
+      </mat-form-field>
+      <mat-form-field appearance="outline">
+        <mat-label>Office Branch</mat-label>
+        <input formControlName="officeBranch" matInput placeholder="Office Branch">
+      </mat-form-field>
+       <!-- <mat-form-field appearance="outline">
+        <mat-label>DOB</mat-label>
+        <input formControlName="dob" matInput [matDatepicker]="picker">
+        <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+        <mat-datepicker #picker></mat-datepicker>
+      </mat-form-field> -->
+
+      <mat-form-field appearance="outline">
+        <mat-label>Address</mat-label>
+        <textarea formControlName="address" matInput placeholder="address"></textarea>
+      </mat-form-field>
+     
+        <mat-checkbox  appearance="outline" formControlName="isActive">Is Active</mat-checkbox>
+      
+      <!-- <mat-form-field appearance="outline">
+        <mat-label>enrollmentDate</mat-label>
+        <input formControlName="enrollmentDate" matInput [matDatepicker]="picker">
+        <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+        <mat-datepicker #picker></mat-datepicker>
+      </mat-form-field> -->
+    </form>
+      
+</div>
+<br>
+<div class="mat-dialog-action" [align]="'end'">
+    
+    <button  mat-raised-button color="primary" (click)="addUser()">{{actionBtn}}</button>
+    <button style="margin-left: 8px;" mat-raised-button color="accent" (click)="resetForm()">Reset</button>
+    <button style="margin-left: 8px;" mat-raised-button color="warn" mat-dialog-close>Close</button>
+    
+</div>
+

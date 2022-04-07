@@ -1,0 +1,48 @@
+<h1 class="mat-dialog-title">Add Company</h1>
+<div mat-dialog-content>
+    <form [formGroup]="companyForm">
+      <mat-form-field appearance="outline">
+        <mat-label>companyName</mat-label>
+        <input formControlName="companyName" matInput placeholder="Company Name">
+      </mat-form-field>
+      <mat-form-field appearance="outline">
+        <mat-label>Short Name</mat-label>
+        <input formControlName="shortcutName" matInput placeholder="Short Name">
+      </mat-form-field>
+      <mat-form-field appearance="outline">
+        <mat-label>Address Line 1</mat-label>
+        <textarea matInput formControlName="addressLine1" placeholder="Address Line 1"></textarea>
+      </mat-form-field>
+      <mat-form-field appearance="outline">
+        <mat-label>Address Line 2</mat-label>
+        <textarea matInput formControlName="addressLine2" placeholder="Address Line 2"></textarea>
+      </mat-form-field>
+      <mat-form-field appearance="outline">
+        <mat-label>WebsiteUrl</mat-label>
+        <input formControlName="websiteUrl" matInput placeholder="Website Url">
+      </mat-form-field>
+      
+      
+        <!-- <input type="file" id="fileUpload"> -->
+     
+     
+        <mat-checkbox formControlName="isActive">isActive</mat-checkbox>
+      
+      <!-- <mat-form-field appearance="outline">
+        <mat-label>enrollmentDate</mat-label>
+        <input formControlName="enrollmentDate" matInput [matDatepicker]="picker">
+        <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+        <mat-datepicker #picker></mat-datepicker>
+      </mat-form-field> -->
+    </form>
+      
+</div>
+<br>
+<div class="mat-dialog-action" [align]="'end'">
+    
+    <button  mat-raised-button color="primary" (click)="addCompany()">{{actionBtn}}</button>
+    <button style="margin-left: 8px;" mat-raised-button color="accent" (click)="resetForm()">Reset</button>
+    <button style="margin-left: 8px;" mat-raised-button color="warn" mat-dialog-close>Close</button>
+    
+</div>
+
